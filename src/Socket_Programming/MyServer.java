@@ -20,7 +20,7 @@ public class MyServer {
             BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
             String write="",recevie="";
             while(!write.equals("Stop")){
-                System.out.println("Waiting for client");
+                System.out.println("Waiting for client input");
                 recevie=dataInputStream.readUTF();
                 System.out.println("Client :"+recevie);
                 write=br.readLine();
